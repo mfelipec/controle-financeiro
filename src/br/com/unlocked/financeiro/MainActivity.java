@@ -218,7 +218,7 @@ public class MainActivity extends FragmentActivity {
 				String mensagem = segundoCampo.getText().toString();
 		 
 				// Cria o intent com a mensagem a ser passada para a onva tela.
-				Intent intent = new Intent(this, PagarActivity);
+				Intent intent = new Intent(MainActivity.this, PagarActivity.class);
 				intent.putExtra("mensagem", mensagem);
 		 
 				// Inicia a nova tela.
